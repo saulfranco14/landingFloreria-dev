@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/favicon">
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- SWEET ALERT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <title>Florería Jazmín</title>
 </head>
 <body>
@@ -25,13 +34,31 @@
             <div class="formContainer">
                 <div class="formTitle">Registro</div>
                 <form class="form" action="#">
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="email" placeholder="Correo electronico">
-                    <input type="text" placeholder="Teléfono">
-                    <button class="btnSend">Enviar</button>
+                    <input  
+                        id          ="nameForm" 
+                        type        ="text" 
+                        placeholder ="Nombre completo"
+                    />
+                    <input  
+                        id          ="emailForm" 
+                        type        ="email" 
+                        placeholder ="Correo electronico"
+                    />
+                    <input  
+                        id          ="telephoneForm" 
+                        type        ="text" 
+                        placeholder ="Teléfono"
+                    />
+                    <button 
+                        id="sendForm" 
+                        class="btnSend"
+                    >
+                        Enviar
+                    </button>
                 </form>
             </div>
         </div>
     </div>
 </body>
+    <script src="./js/main.js" > </script>
 </html>
