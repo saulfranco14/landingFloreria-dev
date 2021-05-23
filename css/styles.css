@@ -1,0 +1,148 @@
+html, body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.register{
+    height: 100%;
+    background-image: url(../images/background2.png);
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: inherit;
+}
+.navegation{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 7px;
+    width: 100px;
+    height: 105px;
+    background: url(../images/logo_transparente2.png);
+    background-size: cover;
+}
+/* Cuerpo del programa */
+.align-container{
+    display: flex;
+    flex-direction: column;
+}
+.textContainer{
+    padding-bottom: 8%;
+}
+.title{
+    font-size: 23px;
+    margin-left: 17px;
+    width: 86%;
+    color: #EFF0F1;
+}
+.subTitle{
+    font-size: 11px;
+    line-height: 24px;
+    margin-left: 17px;
+    width: 86%;
+    color: rgba(255, 255, 255, 0.7);
+}
+/* Formulario */
+.formContainer{
+    background: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 90%;
+    margin-left: 16px;
+    padding-bottom: 7%;
+}
+.formTitle{
+    color: #252A36;
+    padding-top: 8%;
+    padding-bottom: 7%;
+    font-size: 23px;
+    margin-left: 39px;
+}
+.form{
+    padding-left: 39px;
+}
+.form input{
+    font-size: 18px;
+    width: 84%;
+    padding-left: 12px;
+    margin-bottom: 1rem;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+.form input:focus{
+    background: #F4F9FF;
+}
+.form input:focus-visible{
+    outline-offset: 0px;
+    outline-color: #418FDE;
+}
+.btnSend{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    width: 118px;
+    color: #F4F9FF;
+    border: 1px solid #418FDE;
+    background: #418FDE;
+    border-radius: 24px;
+    padding: 13px 15px;
+}
+/* Responsive */
+@media (min-width: 320px) and (max-width: 414px) and (orientation:portrait){
+    .register{
+        height: 100%;
+        padding-bottom: 3%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 769px){
+    .register{
+        padding-bottom: 31%;
+    }
+}
+@media (min-width: 992px){
+    .register{
+        height: 100%;
+        padding-bottom: inherit;
+    }
+    .align-container{
+        height: 85%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .formContainer{
+        width: 57%;
+        margin-right: 26px;
+    }
+}
+
+@media (min-width: 1199.98px){
+    .register{
+        height: 100%;
+        padding-bottom: inherit;
+    }
+    .align-container{
+        height: 85%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .formContainer{
+        width: 31%;
+        margin-right: 2%;
+    }
+    .title{
+        width: 85%;
+    }
+    .textContainer{
+        padding-left: 164px;
+        width: 49%;
+    }
+}
