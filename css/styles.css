@@ -146,3 +146,104 @@ html, body{
         width: 49%;
     }
 }
+
+/* text part */
+.text{
+    background-color: #F5F7F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+.titleText{
+    font-size: 30px;
+    color: #3E2B2E;
+}
+.subtitleText{
+    width: 1100px;
+    font-size: 18px;
+    color: #3E2B2E;
+}
+.subtitleText p{
+    text-align: center;
+    line-height: 27px;
+    margin-left: 112px;
+    margin-right: 112px;
+}
+
+@media only screen and (max-width: 1120px){
+    .titleText{
+        text-align: center;
+    }
+    .text{
+        padding-bottom: 9%;
+    }
+.subtitleText{
+        width: 350px;
+    }
+.subtitleText p{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+/* Colums part*/
+.div-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #EFEFE8;
+    padding: 10px;
+}
+/* .div-container div{
+    border-radius: 6px;
+    background-color: #F4F7FF;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #DBD5D1;
+} */
+.firstDiv{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 300px;
+    height: 270px;
+    margin: 10px;
+}
+.secondDiv{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 300px;
+    height: 270px;
+    margin: 10px;
+}
+.thirdDiv{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 300px;
+    height: 270px;
+    margin: 10px;
+}
+@media only screen and (max-width: 800px){
+    .div-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 11%;
+    padding-bottom: 10%;
+    }
+}
+.img-container{
+    height: 74%;
+}
+.imagenFlowerDiv{
+    width: 100%;
+    height: 100%;
+}
+.description-img p{
+    text-align: center;
+}
