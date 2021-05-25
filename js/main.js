@@ -46,7 +46,7 @@ $( document ).ready(function() {
         })
         .then((response) => {
             console.log(response);
-            viewModal(response.msg, "success", "#39A334");
+            viewModal("Registro Exitoso", "success", "#39A334");
             
         }, (error) => {
             viewModal("hubo un error, intente más tarde", "error", "#F27474");

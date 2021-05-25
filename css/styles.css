@@ -2,7 +2,6 @@ html, body{
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
     margin: 0;
 }
@@ -54,6 +53,7 @@ html, body{
     border-radius: 6px;
     width: 90%;
     margin-left: 16px;
+    margin-bottom: 15px;
     padding-bottom: 7%;
 }
 .formTitle{
@@ -119,6 +119,7 @@ html, body{
     }
     .formContainer{
         width: 57%;
+        margin-bottom: 25px;
         margin-right: 26px;
     }
 }
@@ -245,5 +246,25 @@ html, body{
     height: 100%;
 }
 .description-img p{
+    text-align: center;
+}
+
+/* Social */
+.social{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #3E2B2E;
+    font-size: 25px;
+    padding: 12px;
+}
+/* Footer */
+.footer{
+    background-color: #F5F7F6;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.footerText{
     text-align: center;
 }
