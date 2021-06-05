@@ -2,11 +2,13 @@ $( document ).ready(function() {
     console.log( "Esta funcionando correctamente" );
 
     $("#sendForm").click( function(){
+        
     
         // Validar datos
         let name        = $("#nameForm").val();
         let email       = $("#emailForm").val();
         let telefono    = $("#telephoneForm").val();
+
         
 
         // Verificar que no este vació
@@ -28,25 +30,27 @@ $( document ).ready(function() {
         }
         
         // Telephone
-        if(telefono.length < 7 ){
-            viewModal("Télefono válido", "error", "#F27474");
+        if( !/^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/.test(telefono)){
+            viewModal("Télefono no válido", "error", "#F27474");
             return;
         }
 
             
         // Implementar axios
-        axios.post('https://floreria-jazmin.herokuapp.com/api/users/create', {
+        //https://jsonplaceholder.typicode.com/users
+        //https://floreria-jazmin.herokuapp.com/api/users/create
+        axios.post('https://jsonplaceholder.typicode.com/users', {
             nombre_completo     : name,
             email               : email,
             telefono_cel        : telefono
         })
         .then((response) => {
             console.log(response);
-            viewModal(response.msg, "success", "#39A334");
+            viewModal("Registro Exitoso", "success", "#39A334");
+            
         }, (error) => {
             viewModal("hubo un error, intente más tarde", "error", "#F27474");
         });
-
 
         // funcion para retornar errores
         function viewModal( data, icon , style ){
