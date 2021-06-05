@@ -7,7 +7,7 @@ html, body{
 }
 .register{
     height: 100%;
-    background-image: url(../images/background2.png);
+    background-image: url(../images/tulips-6128401.jpg);
     background-size: cover;
     background-position: 50%;
     padding-bottom: inherit;
@@ -20,8 +20,8 @@ html, body{
 .logo{
     cursor: pointer;
     margin-left: 7px;
-    width: 100px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
     background: url(../images/logo_transparente2.png);
     background-size: cover;
 }
@@ -40,7 +40,7 @@ html, body{
     color: #EFF0F1;
 }
 .subTitle{
-    font-size: 11px;
+    font-size: 12px;
     line-height: 24px;
     margin-left: 17px;
     width: 86%;
@@ -84,14 +84,17 @@ html, body{
 }
 .btnSend{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     width: 118px;
     color: #F4F9FF;
-    border: 1px solid #418FDE;
-    background: #418FDE;
-    border-radius: 24px;
+    border: 1px solid #5cb85c;
+    background: #5cb85c;
+    border-radius: 5px;
     padding: 13px 15px;
+    cursor: pointer;
+    width: 88%;
+    margin-top: 20px;
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 414px) and (orientation:portrait){
@@ -195,7 +198,7 @@ html, body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #EFEFE8;
+    background-color: #F5F7F6;
     padding: 10px;
 }
 /* .div-container div{
@@ -213,6 +216,8 @@ html, body{
     width: 300px;
     height: 270px;
     margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 .secondDiv{
     display: flex;
@@ -221,6 +226,8 @@ html, body{
     width: 300px;
     height: 270px;
     margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 .thirdDiv{
     display: flex;
@@ -229,6 +236,8 @@ html, body{
     width: 300px;
     height: 270px;
     margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 @media only screen and (max-width: 800px){
     .div-container{
@@ -244,16 +253,19 @@ html, body{
 .imagenFlowerDiv{
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
-.description-img p{
+
+.textCenter{
     text-align: center;
+    font-weight: bold;
 }
 
 /* Social */
 .social{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #F5F7F6;
     color: #3E2B2E;
     font-size: 25px;
     padding: 12px;
@@ -261,10 +273,12 @@ html, body{
 /* Footer */
 .footer{
     background-color: #F5F7F6;
-    padding: 10px;
     display: flex;
     justify-content: center;
+    height: 70px;
+    padding: 30px;
 }
 .footerText{
+    margin-top: 25px;
     text-align: center;
 }
